@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work8</title>
+</head>
+<body>
+<h4>Yêu cầu: Kiểm tra xem nhập vào 1 số có phải là tuổi của 1 người không ( tuổi từ 0 đến 120)</h4>
+<input type="number" placeholder="Nhập vào" id="a">
+<button onclick="kiemTra ()">Kiểm tra</button>
+<p id="kq"></p>
+<script>
+  function kiemTra () {
+    let a = +document.getElementById('a').value;
+    if (a > 0 && a <= 120) {
+      document.getElementById('kq').innerHTML = ' Là số tuổi ' ;
+    } else {
+      document.getElementById('kq').innerHTML = ' Không là số tuổi ' ;
+    }
+  }
+</script>
+</body>
+</html>

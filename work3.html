@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work3</title>
+</head>
+<body>
+<h4>Yêu cầu: Tính diện tích hình vuông khi biết cạnh a (s = a*a)</h4>
+<p>Tính diện tích hình vuông khi có cạnh a là :</p>
+<input type="number" placeholder="Cạnh a" id="a">
+<button onclick="tinhDienTich()" >Diện tích</button>
+<p id="kq"></p>
+<script>
+    function tinhDienTich() {
+        let a = +document.getElementById('a').value;
+        let s = a*a ;
+        document.getElementById('kq').innerHTML = 'Diện tích hình vuông là ' + s ;
+    }
+</script>
+
+</body>
+</html>

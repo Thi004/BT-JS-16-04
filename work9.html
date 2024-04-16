@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work9</title>
+</head>
+<body>
+<h4>Yêu cầu: Kiểm tra xem a,b,c nhập vào có phải là cạnh của 1 tam giác hay không , với điều kiện </h4>
+<img src="dieukien.png" height="127" width="111"/></body>
+<input type="number" placeholder="Nhập a" id="a">
+<input type="number" placeholder="Nhập b" id="b">
+<input type="number" placeholder="Nhập c" id="c">
+<button onclick="kiemTra ()">Kiểm tra</button>
+<p id="kq"></p>
+<script>
+    function kiemTra () {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+        let d = a+b;
+        let e = a+c;
+        let i = b+c;
+        if (a>0 && b>0 && c>0 && d > c && e > b && i > a ) {
+            document.getElementById('kq').innerHTML = ' Là 3 cạnh của tam giác' ;
+        } else {
+            document.getElementById('kq').innerHTML = ' Không phải là cạnh của tam giác' ;
+        }
+    }
+</script>
+</html>

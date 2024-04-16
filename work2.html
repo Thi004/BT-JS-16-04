@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work2</title>
+</head>
+<body>
+<h4> Yêu cầu: Chuyển từ mét sang feet ( ft = m * 3.2808) </h4>
+<input type="number" placeholder="Nhập số met cần đổi" id="a">
+<button onclick="doi()">Đổi sang Feet</button>
+<p id="kq"></p>
+<script>
+    function doi() {
+        let a = +document.getElementById('a').value;
+        let b = a * 3.2808;
+        document.getElementById('kq').innerHTML = a + ' m = ' + b + ' ft '
+    }
+</script>
+
+</body>
+</html>

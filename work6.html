@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work6</title>
+</head>
+<body>
+<h4>Yêu cầu: Giải phương trình bậc 1 ( ax + b = 0 )</h4>
+<input type="number" placeholder="Nhập a" id="a">
+<input type="number" placeholder="Nhập b" id="b">
+<button onclick="tinhx ()">Tìm x</button>
+<p id="kq"></p>
+<script>
+    function tinhx () {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let x = -b/a ;
+        document.getElementById('kq').innerHTML = 'x là ' + x ;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>work1</title>
+</head>
+<body>
+<h4>Yêu cầu: Chuyển từ độ C sang độ F ( độ F = độ C * 9/5 + 32 ) </h4>
+<input type="number" placeholder="Nhập vào độ C" id="a">
+<button onclick="doi()">Đổi sang độ F</button>
+<p id="kq"></p>
+<script>
+    function doi() {
+let a = +document.getElementById('a').value;
+let b = (a*9/5) + 32 ;
+document.getElementById('kq').innerHTML = a + ' độ C bằng ' + b + ' độ F ';
+    }
+</script>
+</body>
+</html>
