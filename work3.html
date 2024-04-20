@@ -13,7 +13,9 @@
 <script>
     function tinhDienTich() {
         let a = +document.getElementById('a').value;
-        let s = a*a ;
+        //let s = a*a ;
+        let s = Math.pow(a,2);
+
         document.getElementById('kq').innerHTML = 'Diện tích hình vuông là ' + s ;
     }
 </script>

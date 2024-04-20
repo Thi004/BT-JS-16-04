@@ -14,8 +14,14 @@
     function tinhx () {
         let a = +document.getElementById('a').value;
         let b = +document.getElementById('b').value;
-        let x = -b/a ;
-        document.getElementById('kq').innerHTML = 'x là ' + x ;
+        let x = -b / a;
+        if (a === 0 && b ===0 ) {
+            document.getElementById('kq').innerHTML = 'phương trình vô số nghiệm ;
+        } else if (a === 0 && b !== 0 ) {
+            document.getElementById('kq').innerHTML = 'phương trình vô nghiệm ;
+    } else {
+            document.getElementById('kq').innerHTML = 'x là ' + x;
+        }
     }
 </script>
 </body>
